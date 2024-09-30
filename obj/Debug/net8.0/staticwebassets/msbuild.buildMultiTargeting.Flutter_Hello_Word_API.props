@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Flutter_Hello_Word_API.props" />
+</Project>
