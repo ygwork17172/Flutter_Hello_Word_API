@@ -1,15 +1,31 @@
+using Microsoft.EntityFrameworkCore;
+using Flutter_Hello_Word_API.Data; // Assurez-vous d'importer le bon namespace
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
+// Ajouter les services au conteneur
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
+// Ajouter le service CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins", builder =>
+    {
+        builder.AllowAnyOrigin()
+               .AllowAnyMethod()
+               .AllowAnyHeader();
+    });
+});
+
+// Ajouter le DbContext avec SQLite
+builder.Services.AddDbContext<MonDbContext>(options =>
+    options.UseSqlite("Data Source=app.db"));
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -17,9 +33,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors("AllowAllOrigins");
 app.UseAuthorization();
-
 app.MapControllers();
-
 app.Run();

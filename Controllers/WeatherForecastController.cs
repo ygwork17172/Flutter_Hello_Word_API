@@ -1,3 +1,4 @@
+using Flutter_Hello_Word_API.Data.Entities;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Flutter_Hello_Word_API.Controllers
