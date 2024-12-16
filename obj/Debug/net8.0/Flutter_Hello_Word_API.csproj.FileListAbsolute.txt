@@ -127,3 +127,12 @@ D:\Flutter_Hello_Word\Flutter_Hello_Word_API\Flutter_Hello_Word_API\bin\Debug\ne
 D:\Flutter_Hello_Word\Flutter_Hello_Word_API\Flutter_Hello_Word_API\bin\Debug\net8.0\runtimes\win-arm64\native\e_sqlite3.dll
 D:\Flutter_Hello_Word\Flutter_Hello_Word_API\Flutter_Hello_Word_API\bin\Debug\net8.0\runtimes\win-x64\native\e_sqlite3.dll
 D:\Flutter_Hello_Word\Flutter_Hello_Word_API\Flutter_Hello_Word_API\bin\Debug\net8.0\runtimes\win-x86\native\e_sqlite3.dll
+D:\Flutter_Hello_Word\Flutter_Hello_Word_API\Flutter_Hello_Word_API\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\Flutter_Hello_Word\Flutter_Hello_Word_API\Flutter_Hello_Word_API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\Flutter_Hello_Word\Flutter_Hello_Word_API\Flutter_Hello_Word_API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Flutter_Hello_Word\Flutter_Hello_Word_API\Flutter_Hello_Word_API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Flutter_Hello_Word\Flutter_Hello_Word_API\Flutter_Hello_Word_API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\Flutter_Hello_Word\Flutter_Hello_Word_API\Flutter_Hello_Word_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\Flutter_Hello_Word\Flutter_Hello_Word_API\Flutter_Hello_Word_API\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Flutter_Hello_Word\Flutter_Hello_Word_API\Flutter_Hello_Word_API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\Flutter_Hello_Word\Flutter_Hello_Word_API\Flutter_Hello_Word_API\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll

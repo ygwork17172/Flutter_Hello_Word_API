@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Flutter_Hello_Word_API.Migrations
 {
     [DbContext(typeof(MonDbContext))]
-    [Migration("20241007135237_InitialCreate")]
+    [Migration("20241031185015_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -35,6 +35,25 @@ namespace Flutter_Hello_Word_API.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Produits");
+                });
+
+            modelBuilder.Entity("Flutter_Hello_Word_API.Data.Entities.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("INTEGER");
+
+                    b.Property<string>("PasswordHash")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
                 });
 #pragma warning restore 612, 618
         }

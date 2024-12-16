@@ -23,6 +23,20 @@ namespace Flutter_Hello_Word_API.Migrations
                 {
                     table.PrimaryKey("PK_Produits", x => x.Id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "INTEGER", nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    Username = table.Column<string>(type: "TEXT", nullable: false),
+                    PasswordHash = table.Column<string>(type: "TEXT", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.Id);
+                });
         }
 
         /// <inheritdoc />
@@ -30,6 +44,9 @@ namespace Flutter_Hello_Word_API.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Produits");
+
+            migrationBuilder.DropTable(
+                name: "Users");
         }
     }
 }
